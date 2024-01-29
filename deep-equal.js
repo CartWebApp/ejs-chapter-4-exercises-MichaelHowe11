@@ -1,7 +1,12 @@
 function deepEqual(value, reference) {
-  // Add code.
-}
 
+
+  if (JSON.stringify(value) === JSON.stringify(reference)) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 
