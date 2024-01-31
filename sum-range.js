@@ -1,6 +1,21 @@
 function range(start, end, step = 1) {
-  // Add code.
+  let numList = [];
+  
+  if (end<start) {
+    while (end <= start) {
+      numList.push(start);
+      start = start + step;
+    }
+  } else {
+    while (end >= start) {
+      numList.push(start);
+      start = start + step;
+    }
+  }
+
+return(numList);
 }
+
 
 function sum(numbers) {
   // Add code.
