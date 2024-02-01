@@ -11,6 +11,7 @@ function range(start, end, step = 1) {
       numList.push(start);
       start = start + step;
     }
+    return numList;
   }
 
 return(numList);
@@ -18,7 +19,12 @@ return(numList);
 
 
 function sum(numbers) {
-  // Add code.
+  let numbersSum = 0;
+  console.log(numbers);
+  for (let i = 0; i < numbers.length; i++) {
+    numbersSum += numbers[i];
+  }
+  return numbersSum;
 }
 
 
