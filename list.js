@@ -1,5 +1,8 @@
 function arrayToList(arr) {
-  // Add code.
+  for (let i = 0; i < arr.length; i++) {
+    arr.value = arr[i];
+    console.log(arr.value)
+  }
 }
 
 function listToArray(list, arr) {
