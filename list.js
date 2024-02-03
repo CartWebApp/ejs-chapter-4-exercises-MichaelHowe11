@@ -1,12 +1,18 @@
 function arrayToList(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr.value = arr[i];
-    console.log(arr.value)
+  let list = null;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    list = {value: arr[i],rest:list};
   }
+  return list;
 }
 
 function listToArray(list, arr) {
-  // Add code.
+  arr = [];
+  while (list !== null) {
+    arr.push(list.value);
+    list = list.rest;
+  }
+  return arr;
 }
 
 // tests
